@@ -96,13 +96,12 @@ music:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: false
+  enable: true
   showTitle: true
   title: 精彩视频
   url: /medias/video/sbq.mp4  # 必填
   pic:
   thumbnails:
-  width: 400
   height: 400 # 如：400
   autoplay: false # 是否自动播放
   theme: '#42b983'

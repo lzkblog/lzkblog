@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: “凯文&博客”
-subtitle: "不悔梦归处，只恨太匆匆"
-description: "专注于Web,分享生活,分享知识"
+title: 凯智园&博客
+subtitle: 不悔梦归处，只恨太匆匆
+description: 专注于Web,分享生活,分享知识
 keywords: [HTML, CSS, JavaScript, JQuery, React, Vue.js]
 author: luzhongkai
 language: zh-CN
@@ -23,7 +23,7 @@ socialLink:
 
 # URL
 url: https://gitee.com/luzhongkaiqq/hexoblog.git
-root: /hexoblog/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -137,7 +137,7 @@ permalink_pinyin:
 
 #文章字数统计插件
 wordCount:
-  enable: false # 将这个值设置为 true 即可.
+  enable: true # 将这个值设置为 true 即可.
   postWordCount: true
   min2read: true
   totalCount: true

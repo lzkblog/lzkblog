@@ -96,7 +96,7 @@ music:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: true
+  enable: false
   showTitle: true
   title: 精彩视频
   url: /medias/video/sbq.mp4  # 必填
@@ -127,9 +127,9 @@ logo: /medias/logo.png
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
   enable: true
-  name: Github
+  name: Gitee
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://gitee.com/luzhongkaiqq
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -543,7 +543,7 @@ addthis:
 # 打字效果副标题.
 # 如果有符号 ‘ ，请在 ’ 前面加上 \
 subtitle:
-  enable: true
+  enable: false
   loop: true # 是否循环
   showCursor: true # 是否显示光标
   startDelay: 300 # 开始延迟
@@ -594,6 +594,16 @@ artitalk:
   enable: false
   appId: # xxxxx
   appKey: # xxxxxx
+
+chat:
+  enable: true
+  service: tidio
+  icon: comment
+  text: Chat
+  
+Tidio:
+  enable: true
+  key: cxzj3kmeww00exd8g36lnpnehkfsnfct
 
 # 哔哔功能配置
 # 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content

@@ -4,7 +4,7 @@
 
 # Site
 title: 凯智园&博客
-subtitle: 不悔梦归处，只恨太匆匆
+subtitle: 你是我少年时的梦想
 description: 专注于Web,分享生活,分享知识
 keywords: [HTML, CSS, JavaScript, JQuery, React, Vue.js]
 author: luzhongkai
@@ -23,7 +23,7 @@ socialLink:
 
 # URL
 url: https://gitee.com/luzhongkaiqq/hexoblog.git
-root: /
+root: /hexoblog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -179,5 +179,5 @@ deploy:
   type: git
   repo: https://gitee.com/luzhongkaiqq/hexoblog.git
   branch: master
-  message: '第一次提交博客文件数据'
+  message: '进行了主题的优化与个性化配置'
 

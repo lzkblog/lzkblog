@@ -108,7 +108,16 @@
     <% if (theme.instantpage.enable) { %>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.instantpage) %>" type="module"></script>
     <% } %>
-
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "考虑下再离开？", clearTimeout(st)) : (document.title =
+                "欢迎访问凯智园博客", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@ socialLink:
 # URL
 url: https://gitee.com/luzhongkaiqq/hexoblog.git
 root: /hexoblog/
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html 
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -135,12 +135,34 @@ permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
 
+#土拍你懒加载
+lazyload:
+  enable: true  # 是否开启图片懒加载
+  onlypost: false  # 是否只对文章的图片做懒加载
+  loadingImg: # eg ./images/loading.gif
+
 #文章字数统计插件
 wordCount:
   enable: true # 将这个值设置为 true 即可.
   postWordCount: true
   min2read: true
   totalCount: true
+
+#外部连接的生成
+hexo_external_link:
+  enable: true
+  enable_base64_encode: true
+  url_param_name: 'u'
+  html_file_name: 'go.html'
+  target_blank: true
+  link_rel: 'external nofollow noopener noreferrer'
+  domain: 'your_domain' # 如果开启了防盗链，填写你的域名
+  safety_chain: true
+
+#生成文章的永久连接
+abbrlink:
+    alg: crc16   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
 
 #添加 RSS 订阅支持
 feed:
@@ -171,6 +193,25 @@ music:
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: true  # 
 
+#压缩代码
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+    - '**/*.md'
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/**/instantpage.js'
+    - '**/matery.js'
 
 
 # Deployment

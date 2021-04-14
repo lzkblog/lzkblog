@@ -47,9 +47,7 @@
         // 每5秒切换 banner 图.  Switch banner image every day.
         var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" +sjdata+ '.jpg';
         $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-        console.log(sjdata)
     }
-    
    setInterval(changebg,5000)
 </script>
 <% } else { %>

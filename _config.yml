@@ -23,7 +23,7 @@ socialLink:
 
 # URL
 url: https://gitee.com/luzhongkaiqq/hexoblog.git
-root: /hexoblog/
+root: /
 permalink: posts/:abbrlink.html 
 permalink_defaults:
 pretty_urls:

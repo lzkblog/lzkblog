@@ -38,9 +38,6 @@ menu:
     url: /friends
     icon: fas fa-address-book
 
-myurl:
-  furl: /js/sakura.js  
-         
 
 # Website start time.
 # 站点运行开始时间.

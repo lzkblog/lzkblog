@@ -13,21 +13,10 @@ menu:
   Archives:
     url: /archives
     icon: fas fa-archive
-  About:
-    url: /about
-    icon: fas fa-user-circle
-  Contact:
-    url: /contact
-    icon: fas fa-comments
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
   沿途风景:
     url: /galleries
     icon: fas fa-image
-  
-  # 二级菜单写法如下
-  休闲快乐:
+  休闲娱乐:
     icon: fas fa-list
     children:
       - name: 音乐
@@ -39,8 +28,17 @@ menu:
       - name: 书籍
         url: /books
         icon: fas fa-book
-      
-        
+  About:
+    url: /about
+    icon: fas fa-user-circle
+  Contact:
+    url: /contact
+    icon: fas fa-comments
+  Friends:
+    url: /friends
+    icon: fas fa-address-book
+  
+         
 
 # Website start time.
 # 站点运行开始时间.

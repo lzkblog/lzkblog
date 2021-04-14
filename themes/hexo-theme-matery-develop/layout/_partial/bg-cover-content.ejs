@@ -37,11 +37,11 @@
 
 <% if (theme.banner.enable) { %>
 <script>
-    var sjdata=9
+    var sjdata;
+    sjdata=Math.floor(Math.random()*30)
     // 每5秒切换 banner 图.  Switch banner image every day.
     var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" +sjdata+ '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-
     function changebg(){
         sjdata=Math.floor(Math.random()*30)
         // 每5秒切换 banner 图.  Switch banner image every day.

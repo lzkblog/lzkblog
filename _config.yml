@@ -22,8 +22,8 @@ socialLink:
   rss: true # true、false
 
 # URL
-url: https://gitee.com/luzhongkaiqq/luzhongkaiqq.git
-root: /luzhongkaiqq
+url: https://github.com/lzkblog/lzkblog.git
+root: /lzkblog
 permalink: posts/:abbrlink.html 
 permalink_defaults:
 pretty_urls:
@@ -218,7 +218,9 @@ neat_js:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://gitee.com/luzhongkaiqq/luzhongkaiqq.git
+  repo: https://github.com/lzkblog/lzkblog.git
+  #type: git
+  #repo: https://gitee.com/luzhongkaiqq/luzhongkaiqq.git
   branch: master
   message: '进行了主题的优化与个性化配置'
 
